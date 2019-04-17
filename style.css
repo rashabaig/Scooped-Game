@@ -1,0 +1,216 @@
+body {
+    background-image:url("icecream.jpg");
+    background-size: cover;
+}
+h1 {
+    font-family: 'Cabin Sketch', cursive;
+    color: dimgray;
+    text-align: center;
+    font-size: 75px;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top: thistle double 5px;
+    border-bottom: thistle double 5px;
+
+}
+span{
+    font-family: 'Lily Script One', cursive;
+    font-size: 25px;
+    color: rgb(143, 96, 143);
+}
+h3{
+    font-family: 'Walter Turncoat', cursive;
+    color: rgb(89, 55, 89);
+    margin-top: 20%;
+    font-size: 200%;
+}
+h2 {
+    font-family: 'Cabin Sketch', cursive;
+    color: rgb(143, 96, 143);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 10%;
+}
+
+.letterDiv{
+    display: inline-block;
+    width:10%;
+    height: 20%;
+    margin:0 0 1px 1px;
+    border-bottom: black;
+}
+
+p{
+    color:black;
+    text-align: center;
+    font-size:200%;
+    background-color:black;
+    font-family: 'Walter Turncoat', cursive;
+    width: 50%;
+    height:200%;
+    border-radius:30%;
+    display: inline-block;
+
+}
+input {
+    font-family: 'Cabin Sketch', cursive;
+    margin-bottom: 5px;
+    border-radius:4px;
+}
+
+.white{
+    color:white;
+}
+.playersContainer {
+    background-color: rgba(226, 214, 231, 0.7);
+    padding: 20px;
+    width:50%;
+    border: seashell 5px ridge;
+    text-align: center;
+}
+.icecreamCone{
+    height: 35%;
+    width: 35%;
+    border: seashell 5px ridge;
+    background-color: rgba(226, 214, 231, 0.7);
+    margin-right: 5%;
+}
+.stem {
+    width: 3px;
+    height: 15px;
+    background: rgb(52, 104, 52);
+    margin:0 auto;
+  }
+.cherry {
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(rgb(243, 109, 109),rgb(223, 67, 67)) ;
+    border-radius: 50%;
+    margin:0 auto;
+  }
+  .cream1 {
+    width: 30px;
+    height: 10px;
+    background: linear-gradient(rgb(231, 223, 216), seashell);
+    border-radius: 100px / 50px;
+    margin:0 auto;
+  }
+  .cream2 {
+    width: 40px;
+    height: 10px;
+    background: linear-gradient(rgb(231, 223, 216), seashell);
+    border-radius: 100px / 50px;
+    margin:0 auto;
+  }
+  .scoop1{
+    width: 100px;
+    height: 60px; 
+    background: radial-gradient(rgb(247, 237, 231),rgb(238, 182, 176)) ;
+    border-top-left-radius: 110px;  
+    border-top-right-radius: 110px; 
+    border-bottom: 0; 
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin:0 auto;
+  }
+  .scoop2 {
+    width: 125px;
+    height: 75px; 
+    background: radial-gradient(rgb(248, 235, 226),rgb(245, 222, 188)) ;
+    border-top-left-radius: 110px;  
+    border-top-right-radius: 110px; 
+    border-bottom: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin:0 auto;
+  }
+  .scoop3 {
+    width: 150px;
+    height: 75px; 
+    background: radial-gradient(rgb(241, 204, 177),rgb(162, 87, 21)) ;
+    border-top-left-radius: 110px;  
+    border-top-right-radius: 110px; 
+    border-bottom: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin:0 auto;
+  }
+.cone {
+	width: 0;
+	height: 0;
+	border-left: 70px solid transparent;
+	border-right: 70px solid transparent;
+    border-top: 200px solid #d3b178;
+    margin:0 auto;
+}
+.entireGame {
+    display: flex;
+    justify-content: center;
+}
+#p1name {
+    height:50px;
+    width: 250px;
+    font-size: 25px;
+
+}
+#p2name {
+    height:50px;
+    width: 250px;
+    font-size: 25px;
+}
+#submitPlayers {
+    height:50px;
+    width: 200px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    background: radial-gradient(rgb(143, 96, 143),#703e86) ;
+    border-radius: 8px;
+}
+#wordForm {
+    height:50px;
+    width: 250px;
+    font-size: 25px;
+}
+#submitWord {
+    height:50px;
+    width: 200px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    background: radial-gradient(#85386d,#6b2255) ;
+    border-radius: 8px;
+}
+.letterField {
+    height:50px;
+    width: 250px;
+    font-size: 25px;
+}
+#submitLetter {
+    height:50px;
+    width: 200px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    background: radial-gradient(#85386d,#6b2255) ;
+    border-radius: 8px;
+}
+.transparent {
+    background-color: transparent;
+    background: transparent;
+}
+.fas{
+    color: rgb(143, 96, 143);
+}
+.banner {
+    color: rgb(143, 96, 143);
+    font-size: 30px;
+    font-family: 'Lily Script One', cursive;
+    width: 100%;
+    background-color:white;
+    border-radius:0px;
+}
+
+/* used the following links for guidance on how to make shapes */
+/*https://css-tricks.com/the-shapes-of-css/*/
+/*https://stackoverflow.com/questions/22415651/half-circle-with-css-border-outline-only*/

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sundae Game</title>
+</head>
+<body>
+    <div class="picture"></div>
+    <h1><span>Guess the word before you get </span>Scooped<i class="fas fa-ice-cream"></i></h1>
+    <h2 class="chances">Chances: 7</h2>
+    <h2 class ="score">Score: </h2>
+    <div class ="entireGame">
+    <div class="icecreamCone">
+        <p class="banner"></p>
+        <div class ="stem" ></div>
+        <div class ="cherry"></div>
+        <div class ="cream1" ></div>
+        <div class ="cream2" ></div>
+        <div class ="scoop1" ></div>
+        <div class ="scoop2" ></div>
+        <div class ="scoop3" ></div>
+        <div class ="cone"></div>
+    </div>
+    <div class=playersContainer>
+    <h3>Enter Player Names:</h3>
+    <form id="nameForm">
+    <input id = "p1name" type="text" name="player1" placeholder="Player 1 Name"><br>
+    <input id = "p2name" type="text" name="Player2" placeholder="Player 2 Name"><br>
+    <input id = "submitPlayers" type="submit" value="Play!">
+    </form>
+    <div id="wordContainer"></div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
