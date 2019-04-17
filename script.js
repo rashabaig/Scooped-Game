@@ -70,8 +70,7 @@ function createPlaceHolders() {
     letterDiv.appendChild(p)
     p.textContent = word[i]
     p.setAttribute("class",`${word[i]}`)
-    // p.setAttribute("class","reveal")
-    // p.style.display = "none"
+    // p.setAttribute("class", "reveal")
     console.log(p)
     }
     setUp()
@@ -84,9 +83,9 @@ function gameOver(){
         banner.setAttribute("class", "banner")
         let player1 = document.getElementById('p1name').value
         banner.textContent = `You got scooped! ${player1} wins!`
-        let allLetters = document.querySelectorAll('.reveal')
+        let allLetters = document.querySelectorAll('p')
         for (let i=0;i<allLetters.length;i++){
-            allLetters[i].classList.add("white")
+            allLetters[i].style.color = "white"
         }
     }
 }
