@@ -21,7 +21,7 @@ span{
 h3{
     font-family: 'Walter Turncoat', cursive;
     color: rgb(89, 55, 89);
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 200%;
 }
 h2 {
@@ -31,25 +31,33 @@ h2 {
     background-color: rgba(255, 255, 255, 0.9);
     width: 10%;
 }
+.wordContainer{
+height:20%;
+/* width: auto; */
+}
 
 .letterDiv{
     display: inline-block;
-    width:10%;
+    width:5%;
     height: 20%;
-    margin:0 0 1px 1px;
-    border-bottom: black;
+    margin:0 0 5px 5px;
+    border-bottom: 5px solid black;
+    position:relative;
+    
 }
 
 p{
     color:black;
     text-align: center;
     font-size:200%;
-    background-color:black;
+    /* background-color:black; */
     font-family: 'Walter Turncoat', cursive;
-    width: 50%;
-    height:200%;
     border-radius:30%;
-    display: inline-block;
+    visibility: hidden;
+    /* display: inline-block; */
+    position:absolute;
+    bottom: 0;
+    margin:0;
 
 }
 input {
@@ -63,7 +71,7 @@ input {
 }
 .playersContainer {
     background-color: rgba(226, 214, 231, 0.7);
-    padding: 20px;
+    padding: 5px;
     width:50%;
     border: seashell 5px ridge;
     text-align: center;
@@ -105,7 +113,7 @@ input {
   .scoop1{
     width: 100px;
     height: 60px; 
-    background: radial-gradient(rgb(247, 237, 231),rgb(238, 182, 176)) ;
+    background: radial-gradient(rgb(247, 237, 231),rgb(235, 174, 168)) ;
     border-top-left-radius: 110px;  
     border-top-right-radius: 110px; 
     border-bottom: 0; 
@@ -172,7 +180,22 @@ input {
     width: 250px;
     font-size: 25px;
 }
+#clueForm {
+    height:50px;
+    width: 250px;
+    font-size: 25px;
+}
+
 #submitWord {
+    height:50px;
+    width: 200px;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    background: radial-gradient(#85386d,#6b2255) ;
+    border-radius: 8px;
+}
+#submitClue {
     height:50px;
     width: 200px;
     color: white;
@@ -209,8 +232,18 @@ input {
     width: 100%;
     background-color:white;
     border-radius:0px;
+    text-align: center;
+}
+.clue{
+    width:auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color:rgb(182, 136, 182);
 }
 
-/* used the following links for guidance on how to make shapes */
+.visibility{
+visibility: visible;
+}
+
+/* used the following links for guidance on how to make shapes for the icecream cone */
 /*https://css-tricks.com/the-shapes-of-css/*/
 /*https://stackoverflow.com/questions/22415651/half-circle-with-css-border-outline-only*/
