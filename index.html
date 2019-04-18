@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script> -->
     <link rel="stylesheet" href="style.css">
     <title>Sundae Game</title>
 </head>
@@ -16,10 +20,9 @@
     <h1><span>Guess the word before you get </span>Scooped<i class="fas fa-ice-cream"></i></h1>
     <h2 class="chances">Chances: 7</h2>
     <h2 class ="score">Score: </h2>
-    
     <div class ="entireGame">
     <div class="icecreamCone">
-        <h4 class="banner"></h4>
+        <br></br>
         <div class ="stem" ></div>
         <div class ="cherry"></div>
         <div class ="cream1" ></div>
@@ -31,16 +34,19 @@
         <br></br>
     </div>
     <div class=playersContainer>
+    <h2 id ="ins">Instructions:<br></br>Player 1 chooses a word for Player 2 to guess.<br></br> Player 2 has 7 chances to guess the word, losing a topping for every incorrect guess.</h2>
     <h2 class ="clue"></h2>
+    <h4 class="banner"></h4>
     <h3>Enter Player Names:</h3>
-    <form id="nameForm">
+    <!-- <form id="nameForm"> -->
     <input id = "p1name" type="text" name="player1" placeholder="Player 1 Name"><br>
     <input id = "p2name" type="text" name="Player2" placeholder="Player 2 Name"><br>
     <input id = "submitPlayers" type="submit" value="Play!">
-    </form>
+    <!-- </form> -->
     <div id="wordContainer"></div>
     </div>
     </div>
     <script src="script.js"></script>
+    <footer>Made by Rasha Baig</footer>
 </body>
 </html>

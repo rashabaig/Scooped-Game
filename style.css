@@ -11,7 +11,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.8);
     border-top: thistle double 5px;
     border-bottom: thistle double 5px;
-
+    margin:0 auto;
 }
 span{
     font-family: 'Lily Script One', cursive;
@@ -21,7 +21,7 @@ span{
 h3{
     font-family: 'Walter Turncoat', cursive;
     color: rgb(89, 55, 89);
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 200%;
 }
 h2 {
@@ -186,7 +186,7 @@ input {
     font-size: 25px;
 }
 
-#submitWord {
+html #submitWord {
     height:50px;
     width: 200px;
     color: white;
@@ -194,6 +194,7 @@ input {
     font-size: 40px;
     background: radial-gradient(#85386d,#6b2255) ;
     border-radius: 8px;
+    margin-bottom: 0;
 }
 #submitClue {
     height:50px;
@@ -206,15 +207,15 @@ input {
 }
 .letterField {
     height:50px;
-    width: 250px;
-    font-size: 25px;
+    width: 100px;
+    font-size: 20px;
 }
 #submitLetter {
     height:50px;
-    width: 200px;
+    width: 125px;
     color: white;
     font-family: 'Cabin Sketch', cursive;
-    font-size: 40px;
+    font-size: 25px;
     background: radial-gradient(#85386d,#6b2255) ;
     border-radius: 8px;
 }
@@ -243,6 +244,32 @@ input {
 .visibility{
 visibility: visible;
 }
+#ins{
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 1px;
+    background-color: rgba(240, 223, 243, 0.4);
+}
+footer{
+    font-family: 'Lily Script One', cursive;
+    font-size: 25px;
+    color:rgb(101, 60, 101);
+    text-align: right;
+    margin-right: 5%;
+}
+/* nav {
+    display: flex;
+    justify-content: center;
+}
+html .btn-primary {
+    margin:0 auto;
+    background: radial-gradient(#85386d,#6b2255);
+    width: 10%;
+    height: 10%;
+    border: #6b2255;
+} */
+
 
 /* used the following links for guidance on how to make shapes for the icecream cone */
 /*https://css-tricks.com/the-shapes-of-css/*/

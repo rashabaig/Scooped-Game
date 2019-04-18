@@ -28,7 +28,11 @@ function displayNames(event){
     let player2 = document.getElementById('p2name').value
     let instructions = document.querySelector('h3')
     instructions.innerHTML = `${player1}, choose a word for ${player2} to guess`
-    document.getElementById('nameForm').style.display ="none"
+    // document.getElementById('nameForm').style.display ="none"
+    document.getElementById('p1name').style.display ="none"
+    document.getElementById('p2name').style.display ="none"
+    document.getElementById('ins').style.display ="none"
+    document.getElementById('submitPlayers').style.display ="none"
     // createClueForm()
     makeWordForm()
 }
@@ -79,7 +83,6 @@ function createClueForm(){
     submitClueButton.classList = "submitClue"
     submitClueButton.setAttribute("id", "submitClue")
     formContainer.appendChild(submitClueButton) 
-    let player1 = document.getElementById('p1name').value
     let player2 = document.getElementById('p2name').value
     let clueInstructions = document.querySelector('h3')
     clueInstructions.textContent = `Provide a clue for ${player2}`
@@ -103,7 +106,7 @@ function submitClue(event) {
 function createPlaceHolders() {
     let directions = document.querySelector('h3')
     let player2 = document.getElementById('p2name').value
-    directions.textContent = `${player2}, your turn to guess!`
+    directions.textContent = `${player2}, guess a letter!`
     console.log("working")
     for (let i =0; i<word.length; i++) {
     let letterDiv = document.createElement("div")
@@ -120,20 +123,24 @@ function createPlaceHolders() {
 }
 
 function setUp(){
+    let formContainer = document.createElement('FORM')
+    let container = document.querySelector('.playersContainer')
+    container.appendChild(formContainer)
     let guessField = document.createElement('INPUT')
     guessField.setAttribute("type", "text")
-    guessField.setAttribute("placeholder", "Enter letter here")
+    guessField.setAttribute("placeholder", "Enter letter")
     guessField.setAttribute("class", `${guessField.value}`)
     guessField.setAttribute("class", "letterField")
     let submitLetterButton = document.createElement('INPUT')
     submitLetterButton.setAttribute("type", "submit")
-    container.appendChild(submitLetterButton) 
     submitLetterButton.classList = "submitLetter"
     submitLetterButton.setAttribute("id", "submitLetter")
-    var text = document.createTextNode("Submit")
+    var text = document.createTextNode("Guess")
     submitLetterButton.appendChild(text)
-    container.appendChild(guessField)
-    submitLetterButton.addEventListener("click", function() {
+    formContainer.appendChild(guessField)
+    formContainer.appendChild(submitLetterButton) 
+    submitLetterButton.addEventListener("click", function(event) {
+        event.preventDefault()
         if (word.includes(guessField.value)){
             for (let i=0; i<word.length; i++){
             if(word[i]== guessField.value) {
@@ -165,11 +172,14 @@ function gameOver(){
         banner.setAttribute("class", "banner")
         let player1 = document.getElementById('p1name').value
         banner.textContent = `You got scooped! ${player1} wins!`
+        let endGame = document.querySelector('h3')
+        endGame.textContent = "*G a m e   O v e r*"
         let allLetters = document.querySelectorAll('p')
         for (let i=0;i<allLetters.length;i++){
             allLetters[i].classList.add('visibility')
         }
     }
+    
 }
 
 function winner (){
@@ -177,6 +187,8 @@ function winner (){
         let banner = document.querySelector('.banner')
         let player2 = document.getElementById('p2name').value
         banner.textContent = `${player2} wins!`
+        let endGame = document.querySelector('h3')
+        endGame.textContent = "*G a m e   O v e r*"
     }
 }
 
