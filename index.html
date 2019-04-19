@@ -16,9 +16,9 @@
     <title>Sundae Game</title>
 </head>
 <body>
-    
-    <div class="picture"></div>
+    <header>
     <h1><span>Guess the word before you get </span>Scooped<i class="fas fa-ice-cream"></i></h1>
+    </header>
     <nav>
             <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary directions" data-toggle="modal" data-target="#exampleModal">
@@ -36,7 +36,9 @@
             </div>
             <div class="modal-body">
                     Player 1 chooses a word for Player 2 to guess, and provides a clue.<br></br>
-                    Player 2 has 7 chances to guess the word, losing a topping for every incorrect guess.
+                    Player 2 has 7 chances to guess the word, losing a topping for every incorrect guess.<br></br>
+                    Player 1 wins if Player 2 loses all their icecream.<br></br>
+                    Player 2 wins if they guess the word right before they use up their 7 chances.
             </div>
             </div>
         </div>

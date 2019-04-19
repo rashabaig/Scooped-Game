@@ -17,12 +17,14 @@ span{
     font-family: 'Lily Script One', cursive;
     font-size: 25px;
     color: rgb(143, 96, 143);
+    font:bolder;
 }
 h3{
-    font-family: 'Walter Turncoat', cursive;
-    color: rgb(89, 55, 89);
+    font-family: 'Lily Script One', cursive;
+    color: rgb(120, 54, 120);
     margin-top: 10%;
     font-size: 200%;
+    text-transform: capitalize;
 }
 h2 {
     font-family: 'Cabin Sketch', cursive;
@@ -110,7 +112,7 @@ input {
   .scoop1{
     width: 100px;
     height: 60px; 
-    background: radial-gradient(rgb(247, 237, 231),rgb(235, 174, 168)) ;
+    background: radial-gradient(hsl(341, 56%, 89%),rgb(235, 174, 168),rgb(232, 150, 142)) ;
     border-top-left-radius: 110px;  
     border-top-right-radius: 110px; 
     border-bottom: 0; 
@@ -153,12 +155,15 @@ input {
     justify-content: center;
 }
 #p1name {
+    margin-top: 3%;
     height:50px;
     width: 250px;
     font-size: 25px;
 
 }
 #p2name {
+    margin-top: 1%;
+    margin-bottom: 2%;
     height:50px;
     width: 250px;
     font-size: 25px;
@@ -173,10 +178,12 @@ input {
     border-radius: 8px;
 }
 
-#clueForm {
+html #inlineFormInputName2 {
     height:50px;
-    width: 250px;
-    font-size: 25px;
+    width: 200px;
+    font-size: 30px;
+    text-align: center;
+   
 }
 
 html .form1{
@@ -202,6 +209,7 @@ html #submitWord {
     font-size: 40px;
     background: radial-gradient(rgb(143, 96, 143),#703e86) ;
     border-radius: 8px;
+    
 }
 .letterField {
     height:50px;
@@ -234,6 +242,9 @@ html #submitWord {
     border-radius:8px;
     text-align: center;
     margin:0 auto;
+    text-transform: capitalize;
+    /* padding-top: 2%;
+    padding-bottom:2%; */
 }
 .clue{
     width:auto;
@@ -254,7 +265,7 @@ visibility: visible;
 footer{
     font-family: 'Lily Script One', cursive;
     font-size: 25px;
-    color:rgb(101, 60, 101);
+    color:rgb(15, 13, 13);
     text-align: right;
     margin-right: 5%;
 }
@@ -275,7 +286,7 @@ html .btn-primary {
     /* width: 10%;
     height: 10%; */
     font-family: 'Cabin Sketch', cursive;
-    font-size: 20px;
+    font-size: 30px;
     border: #703e86;
 }
 html .directions {
@@ -288,7 +299,7 @@ html .directions {
     background-color: rgb(183, 139, 227) !important;
 }
 html #inputPassword2{
-    font-size:20px;
+    font-size:30px;
 }
 
 html #form2 {
@@ -298,7 +309,16 @@ html #form2 {
  
 html .modal-title {
     font-family: 'Lily Script One', cursive;
+    color:#703e86;
 }
+html #p1name{
+    text-transform: capitalize;
+}
+/* html .form-inline {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+} */
 /* used the following links for guidance on how to make shapes for the icecream cone */
 /*https://css-tricks.com/the-shapes-of-css/*/
 /*https://stackoverflow.com/questions/22415651/half-circle-with-css-border-outline-only*/

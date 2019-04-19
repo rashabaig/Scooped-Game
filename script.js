@@ -150,7 +150,7 @@ function gameOver(){
         let player1 = document.getElementById('p1name').value
         banner.textContent = `You got scooped! ${player1} wins!`
         let endGame = document.querySelector('h3')
-        endGame.textContent = "*G a m e   O v e r*"
+        endGame.textContent = " "
         let allLetters = document.querySelectorAll('p')
         for (let i=0;i<allLetters.length;i++){
             allLetters[i].classList.add('visibility')
@@ -165,7 +165,7 @@ function winner (){
         let player2 = document.getElementById('p2name').value
         banner.textContent = `${player2} wins!`
         let endGame = document.querySelector('h3')
-        endGame.textContent = "*G a m e   O v e r*"
+        endGame.textContent = " Well Done! "
     }
 }
 
