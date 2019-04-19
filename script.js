@@ -3,8 +3,6 @@ let chances = 7
 let clue =""
 let word = ""
 let guessField;
-let player1 = document.getElementById('p1name').value
-let player2 = document.getElementById('p2name').value
 let container = document.querySelector('.playersContainer')
 let wordContainer = document.getElementById('wordContainer')
 let elements = ["stem","cherry","cream1","cream2", "scoop1", "scoop2", "scoop3"]
@@ -14,7 +12,6 @@ function removeElement() {
     console.log(elements[0])
         component.classList.remove(`${elements[0]}`)
         elements.shift()
-        // console.log
         chances -=1
         let h2 = document.querySelector('.chances')
         h2.textContent = `Chances:${chances}`
@@ -28,32 +25,22 @@ function displayNames(event){
     let player2 = document.getElementById('p2name').value
     let instructions = document.querySelector('h3')
     instructions.innerHTML = `${player1}, choose a word for ${player2} to guess`
-    // document.getElementById('nameForm').style.display ="none"
     document.getElementById('p1name').style.display ="none"
     document.getElementById('p2name').style.display ="none"
-    document.getElementById('ins').style.display ="none"
     document.getElementById('submitPlayers').style.display ="none"
-    // createClueForm()
     makeWordForm()
-}
+} 
 
 function makeWordForm(){
-    let formContainer = document.createElement('FORM')
-    let wordForm = document.createElement('INPUT')
-    wordForm.setAttribute("type", "text")
-    wordForm.setAttribute("placeholder", "Enter Word")
-    wordForm.classList = "wordForm"
-    wordForm.setAttribute("id", "wordForm" )
+    let hiddenElements = document.querySelectorAll('.secret')
+    for (let i=0;i<hiddenElements.length;i++){
+        hiddenElements[i].classList.remove('secret')
+    }
+    
+    let wordForm = document.getElementById('inputPassword2')
     wordFormValue = wordForm.value
-    let container = document.querySelector('.playersContainer')
-    container.appendChild(formContainer)
-    formContainer.appendChild(wordForm)
-    let submitWordButton = document.createElement('INPUT')
-    submitWordButton.setAttribute("type", "submit")
-    submitWordButton.setAttribute("value", "submit")
-    submitWordButton.classList = "submitWord"
-    submitWordButton.setAttribute("id", "submitWord")
-    formContainer.appendChild(submitWordButton)
+    console.log(wordFormValue)
+    let submitWordButton = document.querySelector('.submitWordButton')
     submitWordButton.addEventListener("click", submitWord)
     }
     function submitWord(event) {
@@ -62,27 +49,19 @@ function makeWordForm(){
         console.log(wordFormValue)
         word =wordFormValue 
         console.log(word)
-        document.getElementById('wordForm').style.display ="none"
-        document.getElementById('submitWord').style.display ="none"
-        createClueForm()()
+        createClueForm()
     }
 
 function createClueForm(){
-    let formContainer = document.createElement('FORM')
-    let container = document.querySelector('.playersContainer')
-    container.appendChild(formContainer)
-    let clueForm = document.createElement('INPUT')
-    clueForm.setAttribute("type", "text")
-    clueForm.setAttribute("placeholder", "Enter Clue")
-    clueForm.classList = "clueForm"
-    clueForm.setAttribute("id", "clueForm" )
-    formContainer.appendChild(clueForm)
-    let submitClueButton = document.createElement('INPUT')
-    submitClueButton.setAttribute("type", "submit")
-    submitClueButton.setAttribute("value", "submit")
-    submitClueButton.classList = "submitClue"
-    submitClueButton.setAttribute("id", "submitClue")
-    formContainer.appendChild(submitClueButton) 
+    let hiddenElements = document.querySelectorAll('.reveal')
+        for (let i=0;i<hiddenElements.length;i++){
+            hiddenElements[i].classList.add('secret')
+        }
+    let submitClueButton = document.querySelector('#button2')
+    let hiddenElements2 = document.querySelectorAll('.secret2')
+    for (let i=0;i<hiddenElements2.length;i++){
+        hiddenElements2[i].classList.remove('secret2')
+    }
     let player2 = document.getElementById('p2name').value
     let clueInstructions = document.querySelector('h3')
     clueInstructions.textContent = `Provide a clue for ${player2}`
@@ -97,9 +76,8 @@ function submitClue(event) {
     console.log(word)
     let h2clue = document.querySelector('.clue')
     h2clue.textContent = `Clue: ${clue}`
-    document.getElementById('clueForm').style.display ="none"
-    document.getElementById('submitClue').style.display ="none"
-    // makeWordForm()
+    var form2 = document.getElementById('form2');
+    form2.remove();
     createPlaceHolders()
 }
 
@@ -116,7 +94,6 @@ function createPlaceHolders() {
     letterDiv.appendChild(p)
     p.textContent = word[i]
     p.setAttribute("class",`${word[i]}`)
-    // p.style.display = "none"
     console.log(p)
     }
     setUp()
@@ -150,8 +127,8 @@ function setUp(){
             console.log(selectLetters)
             selectLetters.classList.add('visibility')
             console.log(guessField.value)
-            let h2score = document.querySelector('.score')
-            h2score.textContent = `Score:${score}`
+            // let h2score = document.querySelector('.score')
+            // h2score.textContent = `Score:${score}`
             winner()
         } 
         }
