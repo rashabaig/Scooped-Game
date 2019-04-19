@@ -226,13 +226,14 @@ html #submitWord {
     color: rgb(143, 96, 143);
 }
 .banner {
-    color: rgb(143, 96, 143);
+    color:white;
     font-size: 30px;
     font-family: 'Lily Script One', cursive;
-    width: 100%;
-    background-color:white;
-    border-radius:0px;
+    width: 80%;
+    background-color:rgb(245, 129, 129);
+    border-radius:8px;
     text-align: center;
+    margin:0 auto;
 }
 .clue{
     width:auto;
