@@ -38,17 +38,17 @@ function makeWordForm(){
         hiddenElements[i].classList.remove('secret')
     }
     
-    let wordForm = document.getElementById('inputPassword2')
-    wordFormValue = wordForm.value
-    console.log(wordFormValue)
+    // let wordForm = document.getElementById('inputPassword2')
+    // wordFormValue = wordForm.value.toLowerCase()
+    // console.log(wordFormValue)
     let submitWordButton = document.querySelector('.submitWordButton')
     submitWordButton.addEventListener("click", submitWord)
     }
     function submitWord(event) {
         event.preventDefault()
-        let wordFormValue = document.querySelector('.wordForm').value
+        let wordFormValue = document.querySelector('.wordForm').value.toLowerCase()
         console.log(wordFormValue)
-        word =wordFormValue 
+        word = wordFormValue 
         console.log(word)
         createClueForm()
     }
@@ -107,7 +107,7 @@ function setUp(){
     let guessField = document.createElement('INPUT')
     guessField.setAttribute("type", "text")
     guessField.setAttribute("placeholder", "Enter letter")
-    guessField.setAttribute("class", `${guessField.value}`)
+    guessField.setAttribute("class", `${guessField.value.toLowerCase()}`)
     guessField.setAttribute("class", "letterField")
     let submitLetterButton = document.createElement('INPUT')
     submitLetterButton.setAttribute("type", "submit")
@@ -122,7 +122,7 @@ function setUp(){
         console.log(lettersGuessed)
 
         for (let k=0; k<lettersGuessed.length; k++){
-            let valuee = guessField.value
+            let valuee = guessField.value.toLowerCase()
             console.log(guessField.value)
             console.log(valuee)
             console.log(lettersGuessed)
@@ -132,12 +132,12 @@ function setUp(){
         } 
         
         //
-        if (word.includes(guessField.value)){
+        if (word.includes(guessField.value.toLowerCase())){
             for (let i=0; i<word.length; i++){
-                if(word[i]== guessField.value) {
-                    lettersGuessed.push(guessField.value)
+                if(word[i]== guessField.value.toLowerCase()) {
+                    lettersGuessed.push(guessField.value.toLowerCase())
                     score+=1 
-                    console.log(guessField.value)
+                    console.log(guessField.value.toLowerCase())
                     let selectLetters = document.querySelector(`[class = ${word[i]}]`)
                     console.log(selectLetters)
                     // if(selectLetters.classList.includes('visibility')){
