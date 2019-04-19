@@ -3,6 +3,7 @@ let chances = 7
 let clue =""
 let word = ""
 let guessField;
+let lettersGuessed = []
 let container = document.querySelector('.playersContainer')
 let wordContainer = document.getElementById('wordContainer')
 let elements = ["stem","cherry","cream1","cream2", "scoop1", "scoop2", "scoop3"]
@@ -118,29 +119,47 @@ function setUp(){
     formContainer.appendChild(submitLetterButton) 
     submitLetterButton.addEventListener("click", function(event) {
         event.preventDefault()
+        console.log(lettersGuessed)
+
+        for (let k=0; k<lettersGuessed.length; k++){
+            let valuee = guessField.value
+            console.log(guessField.value)
+            console.log(valuee)
+            console.log(lettersGuessed)
+            if (lettersGuessed[k] === valuee){
+                document.querySelector(".letterField").value = ''
+            }
+        } 
+        
+        //
         if (word.includes(guessField.value)){
             for (let i=0; i<word.length; i++){
-            if(word[i]== guessField.value) {
-            score+=1 
-            console.log(guessField.value)
-            let selectLetters = document.querySelector(`[class = ${word[i]}]`)
-            console.log(selectLetters)
-            selectLetters.classList.add('visibility')
-            console.log(guessField.value)
-            // let h2score = document.querySelector('.score')
-            // h2score.textContent = `Score:${score}`
-            winner()
-        } 
-        }
-        document.querySelector(".letterField").value = ''
-        }else { 
-        console.log("Wrong!")
+                if(word[i]== guessField.value) {
+                    lettersGuessed.push(guessField.value)
+                    score+=1 
+                    console.log(guessField.value)
+                    let selectLetters = document.querySelector(`[class = ${word[i]}]`)
+                    console.log(selectLetters)
+                    // if(selectLetters.classList.includes('visibility')){
+                    //     document.querySelector(".letterField").value = ''
+                    // } else {
+                    selectLetters.classList.add('visibility')
+                    console.log(guessField.value)
+                    // let h2score = document.querySelector('.score')
+                    // h2score.textContent = `Score:${score}`
+                    winner()
+                } 
+            }
+            document.querySelector(".letterField").value = ''
+        } else { 
+            console.log("Wrong!")
             removeElement()
             gameOver()
         }
         document.querySelector(".letterField").value = ''
     })
 }
+
 
 function gameOver(){
     if (elements.length === 0) {
