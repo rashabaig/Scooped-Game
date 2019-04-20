@@ -4,6 +4,7 @@ let clue =""
 let word = ""
 let guessField;
 let lettersGuessed = []
+let incorrectGuesses = []
 let container = document.querySelector('.playersContainer')
 let wordContainer = document.getElementById('wordContainer')
 let elements = ["stem","cherry","cream1","cream2", "scoop1", "scoop2", "scoop3"]
@@ -151,8 +152,11 @@ function setUp(){
                 } 
             }
             document.querySelector(".letterField").value = ''
-        } else { 
+        } else if (word.includes(guessField.value.toLowerCase()) != true){
             console.log("Wrong!")
+            incorrectGuesses.push(guessField.value.toLowerCase())
+            let wrongGuessContainer = document.querySelector('.incorrect')
+            wrongGuessContainer.textContent = `Incorrect guesses: ${incorrectGuesses}`
             removeElement()
             gameOver()
         }

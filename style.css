@@ -237,7 +237,7 @@ html #submitWord {
     color:white;
     font-size: 30px;
     font-family: 'Lily Script One', cursive;
-    width: 80%;
+    width: auto;
     background-color:rgb(245, 129, 129);
     border-radius:8px;
     text-align: center;
@@ -309,6 +309,19 @@ html .modal-title {
 html #p1name{
     text-transform: capitalize;
 }
+
+h5 {
+    font-size: 30px;
+    width:auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color:rgb(182, 136, 182);
+    font-family: 'Cabin Sketch', cursive;
+    color: rgb(143, 96, 143);
+    border-radius: 8px; 
+    margin-top: 1%;
+}
+
 /* used the following links for guidance on how to make shapes for the icecream cone */
 /*https://css-tricks.com/the-shapes-of-css/*/
 /*https://stackoverflow.com/questions/22415651/half-circle-with-css-border-outline-only*/
+/* background image: Brooke Lark https://unsplash.com/photos/8beTH4VkhLI */
