@@ -32,6 +32,7 @@ h2 {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     width: 10%;
+    margin-left: 5%;
 }
 
 .wordContainer{
@@ -288,6 +289,7 @@ html .directions {
     margin-bottom: 1%;
     background: rgb(245, 129, 129);
     border: rgb(231, 93, 93);
+    margin-left: 5%;
 }
 
 .btn-primary:hover {
