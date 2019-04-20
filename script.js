@@ -49,7 +49,7 @@ function makeWordForm(){
         event.preventDefault()
         let wordFormValue = document.querySelector('.wordForm').value.toLowerCase()
         console.log(wordFormValue)
-        word = wordFormValue 
+        word = wordFormValue.split(' ').join('') 
         console.log(word)
         createClueForm()
     }
