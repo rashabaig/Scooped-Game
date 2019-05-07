@@ -1,17 +1,20 @@
 body {
-    background-image:url("icecream.jpg");
-    background-size: cover;
+    background-image:url("icecream3.png");
 }
 h1 {
     font-family: 'Cabin Sketch', cursive;
     color: dimgray;
     text-align: center;
     font-size: 75px;
+    margin-bottom: 0;
+}
+header {
     width: auto;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255);
     border-top: thistle double 5px;
     border-bottom: thistle double 5px;
     margin-bottom: 1%;
+    text-align: center;
 }
 span{
     font-family: 'Lily Script One', cursive;
@@ -28,10 +31,13 @@ h3{
 }
 h2 {
     font-family: 'Cabin Sketch', cursive;
-    color: rgb(143, 96, 143);
+    color: white;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 10%;
+    background-color: rgb(199, 169, 233);
+    display: inline-block;
+    width: auto;
+    border: 8px solid transparent;
+    border-radius: 8px;
     margin-left: 5%;
 }
 
@@ -71,7 +77,7 @@ input {
     color:white;
 }
 .playersContainer {
-    background-color: rgba(226, 214, 231, 0.7);
+    background-color: rgba(226, 214, 231, 0.8);
     padding: 5px;
     width:50%;
     border: seashell 5px ridge;
@@ -80,7 +86,7 @@ input {
 .icecreamCone{
     width: 35%;
     border: seashell 5px ridge;
-    background-color: rgba(226, 214, 231, 0.7);
+    background-color: rgba(226, 214, 231, 0.8);
     margin-right: 5%;
 }
 .stem {
@@ -158,16 +164,17 @@ input {
 #p1name {
     margin-top: 3%;
     height:50px;
-    width: 250px;
-    font-size: 25px;
-
+    width: 40%;
+    font-size: 100%;
+    text-align: center;
 }
 #p2name {
     margin-top: 1%;
     margin-bottom: 2%;
     height:50px;
-    width: 250px;
-    font-size: 25px;
+    width: 40%;
+    font-size: 100%;
+    text-align: center;
 }
 #submitPlayers {
     height:50px;
@@ -177,6 +184,9 @@ input {
     font-size: 150%;
     background: radial-gradient(rgb(143, 96, 143),#703e86) ;
     border-radius: 8px;
+}
+#submitPlayers:hover{
+    background:rgb(183, 139, 227);
 }
 
 html #inlineFormInputName2 {
@@ -202,6 +212,10 @@ html #submitWord {
     border-radius: 8px;
     margin-bottom: 0;
 }
+
+html #submitWord:hover {
+    background:rgb(183, 139, 227);
+}
 #submitClue {
     height:50px;
     width: 200px;
@@ -210,7 +224,9 @@ html #submitWord {
     font-size: 40px;
     background: radial-gradient(rgb(143, 96, 143),#703e86) ;
     border-radius: 8px;
-    
+}
+#submitClue:hover {
+    background:rgb(183, 139, 227);
 }
 .letterField {
     height:50px;
@@ -227,6 +243,10 @@ html #submitWord {
     background: radial-gradient(rgb(143, 96, 143),#703e86) ;
     border-radius: 8px;
 }
+#submitLetter:hover {
+    background:rgb(183, 139, 227);
+}
+
 .transparent {
     background-color: transparent;
     background: transparent;
@@ -248,7 +268,12 @@ html #submitWord {
 .clue{
     width:auto;
     background-color: rgba(255, 255, 255, 0.7);
-    border-color:rgb(182, 136, 182);
+    color: rgb(128, 62, 128);
+    width: auto;
+    display: none;
+    margin: 0 auto;
+    border-color:transparent;
+    border-radius: 8px;
 }
 
 .visibility{
@@ -271,9 +296,15 @@ footer{
 html .secret{
     visibility: hidden;
 }
-
+html .alert {
+    background-color: rgb(228, 108, 108);
+    display: inline-block;
+    width: auto;
+    color: white;
+    font-weight: bolder;
+}
 html .secret2{
-    visibility: hidden;
+    display: none;
 }
 nav {
     display: flex;
@@ -287,13 +318,13 @@ html .btn-primary {
 }
 html .directions {
     margin-bottom: 1%;
-    background: rgb(245, 129, 129);
-    border: rgb(231, 93, 93);
+    background: radial-gradient(rgb(255, 175, 175), rgb(254, 145, 145));
+    border: rgb(235, 142, 142);
     margin-left: 5%;
 }
 
-.btn-primary:hover {
-    background-color: rgb(183, 139, 227) !important;
+html .btn-primary:hover {
+    background: rgb(183, 139, 227) !important;
 }
 html #inputPassword2{
     font-size:30px;
@@ -303,7 +334,7 @@ html #form2 {
     width: 40%;
     margin: 0 auto;
 }
- 
+
 html .modal-title {
     font-family: 'Lily Script One', cursive;
     color:#703e86;
@@ -323,7 +354,13 @@ h5 {
     margin-top: 1%;
 }
 
+.invisible{
+    visibility: hidden;
+}
+.modeButtonsContainer {
+    margin-top: 10%;
+}
 /* used the following links for guidance on how to make shapes for the icecream cone */
 /*https://css-tricks.com/the-shapes-of-css/*/
 /*https://stackoverflow.com/questions/22415651/half-circle-with-css-border-outline-only*/
-/* background image: Brooke Lark https://unsplash.com/photos/8beTH4VkhLI */
+/* background image: Brooke Lark https://pixabay.com/illustrations/icecream-background-dessert-summer-993678/ */

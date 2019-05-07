@@ -17,7 +17,8 @@
 </head>
 <body>
     <header>
-    <h1><span>Guess the word before you get </span>Scooped<i class="fas fa-ice-cream"></i></h1>
+    <h1>Scooped<i class="fas fa-ice-cream"></i></h1>
+    <span>Guess the word before you get Scooped!</span>
     </header>
     <nav>
             <!-- Button trigger modal -->
@@ -35,9 +36,12 @@
                 </button>
             </div>
             <div class="modal-body">
+                    <span>One Player Mode:<br></span>
+                    You have 7 chances to guess the word, and a clue is provided to you. You lose a topping for every incorrect guess. If you guess the word before you lose your ice cream, you win!<br>
+                    <span>Two Player Mode:<br></span>
                     Player 1 chooses a word for Player 2 to guess, and provides a clue.<br>
                     Player 2 has 7 chances to guess the word, losing a topping for every incorrect guess.<br>
-                    Player 1 wins if Player 2 loses all their icecream.<br>
+                    Player 1 wins if Player 2 loses all their ice cream.<br>
                     Player 2 wins if they guess the word right before they use up their 7 chances.
             </div>
             </div>
@@ -58,14 +62,26 @@
         <div class ="scoop3" ></div>
         <div class ="cone"></div>
     </div>
-    <div class=playersContainer>
+    <div class="playersContainer">
     <h2 class ="clue"></h2>
     <h4 class="banner"></h4>
-    <h3>Enter Player Names:</h3>
-    <input id = "p1name" type="text" name="player1" placeholder="Player 1 Name"><br>
-    <input id = "p2name" type="text" name="Player2" placeholder="Player 2 Name"><br>
-    <input id = "submitPlayers" type="submit" value="Play!">
+     <h3>Select a mode:</h3>
+    <div class="modeButtonsContainer">
+    <button type="button" class="btn btn-primary onePlayerButton">One Player</button>
+    <button type="button" class="btn btn-primary twoPlayerButton">Two Players</button>
+    </div>
 
+    <input class = "invisible invisible1" id = "p1name" type="text" name="player1" placeholder="Player 1 Name"><br>
+    <input class = "invisible" id = "p2name" type="text" name="Player2" placeholder="Player 2 Name"><br>
+    <input class = "invisible invisible1" id = "submitPlayers" type="submit" value="Play!">
+    <div class="alert collapse" id ='doubleGuess'>
+        <a class="close" onclick="$('.alert').hide()">×</a>  
+        <strong>Try again!</strong> You already guessed this letter.
+    </div>
+    <div class="alert collapse" id ='oneLetter'>
+        <a class="close" onclick="$('.alert').hide()">×</a>  
+        <strong>Sorry!</strong> Please guess one letter at a time.
+    </div>
       <form class="form-inline secret reveal form1">
             <div class="form-group mx-sm-3 mb-2 secret reveal">
               <label for="inputPassword2" class="sr-only secret reveal">Enter Word</label>
@@ -73,7 +89,7 @@
             </div>
             <button type="submit" class="btn btn-primary mb-2 secret submitWordButton reveal">submit</button>
      </form>
-
+     
         <form class="form-inline secret2 reveal2" id="form2">
             <label class="sr-only secret2 reveal2" for="inlineFormInputName2">Enter Clue</label>
             <input type="text" class="form-control mb-2 mr-sm-2 secret2 reveal2 clueForm" id="inlineFormInputName2" placeholder="Enter Clue">
