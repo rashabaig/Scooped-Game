@@ -77,7 +77,7 @@ input {
     color:white;
 }
 .playersContainer {
-    background-color: rgba(226, 214, 231, 0.8);
+    background-color: rgba(226, 214, 231, 0.9);
     padding: 5px;
     width:50%;
     border: seashell 5px ridge;
@@ -86,7 +86,7 @@ input {
 .icecreamCone{
     width: 35%;
     border: seashell 5px ridge;
-    background-color: rgba(226, 214, 231, 0.8);
+    background-color: rgba(226, 214, 231, 0.9);
     margin-right: 5%;
 }
 .stem {
@@ -130,7 +130,7 @@ input {
   .scoop2 {
     width: 125px;
     height: 75px; 
-    background: radial-gradient(rgb(248, 235, 226),rgb(245, 222, 188)) ;
+    background: radial-gradient(rgb(248, 235, 226),rgb(238, 221, 196)) ;
     border-top-left-radius: 110px;  
     border-top-right-radius: 110px; 
     border-bottom: 0;
@@ -297,7 +297,7 @@ html .secret{
     visibility: hidden;
 }
 html .alert {
-    background-color: rgb(228, 108, 108);
+    background: radial-gradient(rgb(255, 175, 175), rgb(254, 145, 145));
     display: inline-block;
     width: auto;
     color: white;

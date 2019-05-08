@@ -1,22 +1,36 @@
-# icecream-project
-Description
-Scooped is a two player game, where player 1 selects a word for player 2 to guess and provides a clue. 
-Player two then has 7 chances to guess the word correctly. 
-The game starts with 7 toppings, and player 2 loses a topping for every incorrect guess. 
-Player 2 scores a point for each letter they guess correctly.
-If player 2 guesses the word before they lose all of their toppings, player 2 wins.
-If player loses all toppings, player 1 wins.
-Features
-Bronze: Player 1 should be able to enter a word for player 2 to guess. Player 2 should only have as many chances as toppings. For each incorrect guess, a component of the icecream cone should disappear.
-Gold: Player 1 should be able to provide a clue feature to provide guidance for player 2's guess.
-Platinum: The game should offer a one player mode, where random words are generated for the player. 
-Add a modal for the instructions. 
-Add a rematch button and a feature to track scores over multiple games.
-Technologies Used:
+# Scooped Game
+Scooped is a game that takes a twist on the popular game called Hangman. This game has a one player mode and a two player mode.
+
+## Features
+In the planning phase, I outlined a Bronze, Silver, and Goald version, with Bronze being the minimum viable product. Currently, the game includes some but not all of the elements from the Gold version.
+
+Bronze: 
+Player 1 should be able to select a word for player 2 to guess. For each incorrect guess, a component of the ice cream should disappear. Player 1 wins if player 2 loses all of their icecream, and player 2 wins if they guess the word before all of their ice cream is lost. In any case, the word should be revealed at the end of the game.
+
+Silver: 
+Adding a clue feature, for player 1 to to provide a clue to player 2. 
+
+Gold: 
+Building out a one player mode. A random word should be generated for the player. A corresponding clue should also be provided.
+
+Adding a modal for the instructions. 
+
+Adding alerts for invalid inputs.
+
+Adding a rematch feature to track scores over multiple games.
+
+### Technologies Used:
 HTML
 CSS
-JavaScript
-Most of the game is generated using the DOM.
-Instructions:
-Player 1 chooses a word for Player 2 to guess, and provides player 2 with a clue.
-Player 2 has 7 chances to guess the word, losing a topping for every incorrect guess and scoring a point for every correct guess.
+Javascript
+Bootstrap components
+
+#### Instructions:
+Scooped has a one player mode and a two player mode. 
+
+In the one player mode, the user must guess a word that is chosen at random. A clue is provided,and the user has 7 chances to guess the word correctly. Each incorrect guess leads to losing a topping or scoop of ice cream. The objective of the game is to guess the word correctly before all of the ice cream is lost. 
+
+In the two player mode, player 1 chooses a word for player 2 to guess. Player 1 also provides player 2 with a clue. Player 2 has 7 chances to guess the word, losing a topping for every incorrect guess.
+
+##### Deployment:
+This game was deployed using GitHub Pages.
