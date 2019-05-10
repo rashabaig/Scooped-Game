@@ -1,14 +1,14 @@
 # Scooped Game
-Scooped is a game that takes a twist on the popular game called Hangman. This game has a one player mode and a two player mode.
+Scooped is a game that takes a twist on the popular game Hangman. This game has a one player mode and a two player mode.
 
 ## Features
-In the planning phase, I outlined a Bronze, Silver, and Goald version, with Bronze being the minimum viable product. Currently, the game includes some but not all of the elements from the Gold version.
+In the planning phase, I outlined a Bronze, Silver, and Gold version, with Bronze being the minimum viable product. Currently, the game includes some but not all of the elements from the Gold version.
 
 Bronze: 
 Player 1 should be able to select a word for player 2 to guess. For each incorrect guess, a component of the ice cream should disappear. Player 1 wins if player 2 loses all of their icecream, and player 2 wins if they guess the word before all of their ice cream is lost. In any case, the word should be revealed at the end of the game.
 
 Silver: 
-Adding a clue feature, for player 1 to to provide a clue to player 2. 
+Adding a clue feature, for player 1 to to provide a clue for player 2. 
 
 Gold: 
 Building out a one player mode. A random word should be generated for the player. A corresponding clue should also be provided.
