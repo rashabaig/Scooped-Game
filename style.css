@@ -9,8 +9,8 @@ h1 {
     margin-bottom: 0;
 }
 header {
-    width: auto;
-    background-image: rgba(255, 255, 255);
+    width: 100%;
+    background-color: rgba(255, 255, 255);
     border-top: thistle double 5px;
     border-bottom: thistle double 5px;
     margin-bottom: 1%;
