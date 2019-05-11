@@ -10,7 +10,7 @@ h1 {
 }
 header {
     width: auto;
-    background: rgba(255, 255, 255);
+    background-image: rgba(255, 255, 255);
     border-top: thistle double 5px;
     border-bottom: thistle double 5px;
     margin-bottom: 1%;
