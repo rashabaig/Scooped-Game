@@ -117,29 +117,29 @@ input {
     margin:0 auto;
   }
   .scoop1{
-    width: 100px;
+    width: 90px;
     height: 60px; 
     background: radial-gradient(hsl(341, 56%, 89%),rgb(235, 174, 168),rgb(232, 150, 142)) ;
     border-top-left-radius: 110px;  
     border-top-right-radius: 110px; 
     border-bottom: 0; 
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     margin:0 auto;
   }
   .scoop2 {
-    width: 125px;
+    width: 115px;
     height: 75px; 
-    background: radial-gradient(rgb(248, 235, 226),rgb(238, 221, 196)) ;
+    background: radial-gradient(rgb(247, 241, 237),rgb(238, 221, 196)) ;
     border-top-left-radius: 110px;  
     border-top-right-radius: 110px; 
     border-bottom: 0;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     margin:0 auto;
   }
   .scoop3 {
-    width: 150px;
+    width: 130px;
     height: 75px; 
     background: radial-gradient(rgb(241, 204, 177),rgb(162, 87, 21)) ;
     border-top-left-radius: 110px;  
@@ -152,8 +152,8 @@ input {
 .cone {
 	width: 0;
 	height: 0;
-	border-left: 70px solid transparent;
-	border-right: 70px solid transparent;
+	border-left: 65px solid transparent;
+	border-right: 65px solid transparent;
     border-top: 200px solid #d3b178;
     margin:0 auto;
 }
@@ -178,7 +178,7 @@ input {
 }
 #submitPlayers {
     height:50px;
-    width: 200px;
+    width: 40%;
     color: white;
     font-family: 'Cabin Sketch', cursive;
     font-size: 150%;
@@ -313,8 +313,9 @@ nav {
 html .btn-primary {
     background: radial-gradient(rgb(143, 96, 143),#703e86);
     font-family: 'Cabin Sketch', cursive;
-    font-size: 30px;
+    font-size: 150%;
     border: #703e86;
+    margin-top: 3%;
 }
 html .directions {
     margin-bottom: 1%;
